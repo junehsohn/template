@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+    <title>New Sails App</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--STYLES-->
+    <link rel="stylesheet" href="/styles/importer.css">
+    <!--STYLES END-->
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+        <div ui-view></div>
+    </div>
+
+    <!--SCRIPTS_BASE-->
+    <script src="/js/dependencies/sails.io/sails.io.js"></script>
+    <script src="/js/dependencies/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="/js/dependencies/jquery.transit/jquery.transit.min.js"></script>
+    <script src="/js/dependencies/underscore/underscore-min.js"></script>
+    <script src="/js/dependencies/angular.1.4/angular.min.js"></script>
+    <script src="/js/dependencies/angular-ui-router-0.2.15/angular-ui-router.min.js"></script>
+    <!--SCRIPTS_BASE END-->
+
+    <!--SCRIPTS-->
+    <script src="/js/app/app.js"></script>
+    <script src="/js/app/main/ctrl/mainCtrl.js"></script>
+    <script src="/js/app/main/directive/mainDirec.js"></script>
+    <script src="/js/app/main/provider/mainFactory.js"></script>
+    <!--SCRIPTS END-->
+
+    <!--SCRIPTS_ALL-->
+    
+    <!--SCRIPTS_ALL END-->
+  </body>
+</html>

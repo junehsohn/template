@@ -1,0 +1,8 @@
+<h3>{{ListCtrl.title}}</h3>
+<ul class="list">
+	<li ng-repeat="li in ListCtrl.list">
+		<span>{{li.name}} :: {{li.id}}</span>
+		<button ng-click="ListCtrl.say(li.id)" value="{{li.name}}">{{li.name}}</button>
+	</li>
+</ul>
+

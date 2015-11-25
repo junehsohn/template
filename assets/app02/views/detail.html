@@ -1,0 +1,9 @@
+<div class="list_container bg-red" detailComp>
+	<h3>{{Detail.title}}</h3>
+	<ul class="list">
+		<li ng-repeat="li in Detail.list">
+			<span>{{li.name}} ==> {{li.id}}</span>
+			<button ng-click="Detail.say(li.id)" value="{{li.name}}">{{li.name}}</button>
+		</li>
+	</ul>
+</div>
