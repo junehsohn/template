@@ -4,6 +4,7 @@ module.exports = function (grunt) {
 		'concat',
 		'uglify',
 		'cssmin',
+		
 		'sails-linker:prodJsBase',
 		'sails-linker:prodJsApp01',
 		'sails-linker:prodJsApp01All',
@@ -13,4 +14,6 @@ module.exports = function (grunt) {
 		'sails-linker:prodStylesJade',
 		'sails-linker:devTplJade'
 	]);
+
+	console.log('prod::');
 };

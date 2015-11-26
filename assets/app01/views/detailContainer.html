@@ -1,0 +1,9 @@
+<div class="page_container detail" >
+	<ul class="list">
+		<li ng-repeat="li in DetailController.listArr">
+			<span class="list_name">{{li.name}} :: {{li.id}}</span>
+			<button ng-click="DetailController.say(li.id)" value="{{li.name}}">{{li.name}}</button>
+		</li>
+	</ul>
+	<h3>{{DetailController.title}}</h3>
+</div>

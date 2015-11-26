@@ -13,9 +13,13 @@
   </head>
 
   <body ng-controller="App01.ctrl as App01MainCtrl">
-    <h3 ng-bind="App01MainCtrl.title"></h3>
+    
     <div id="wrapper" ng-cloak>
+        <h3 class="main_title" ng-bind="App01MainCtrl.title"></h3>
+        <button value="list" ng-click="App01MainCtrl.goState('list');">list</button>
+        <button value="detail" ng-click="App01MainCtrl.goState('detail');">detail</button>
         <div ui-view></div>
+
     </div>
     
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="App01">
+  <head>
+    <title>App01</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!--STYLES_MARKUP-->
+    <link rel="stylesheet" href="../styles/importer.css">
+    <!--STYLES_MARKUP END-->
+  </head>
+
+  <body>
+    
+    <div id="wrapper">
+        <h3 class="main_title" >hqhhq</h3>
+        <button value="list" >list</button>
+        <button value="detail" >detail</button>
+        <div ui-view></div>
+        <div ng-include src="'views/listContainer.html'"></div>
+
+    </div>
+ 
+    <!--SCRIPTS_BASE_MARKUP--> 
+    <script src="../js/dependencies/sails.io/sails.io.js"></script>
+    <script src="../js/dependencies/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+    <script src="../js/dependencies/jquery.transit/jquery.transit.min.js"></script>
+    <script src="../js/dependencies/underscore/underscore-min.js"></script>
+    <script src="../js/dependencies/angular.1.4/angular.min.js"></script>
+    <script src="../js/dependencies/angular-ui-router-0.2.15/angular-ui-router.min.js"></script>
+    <!--SCRIPTS_BASE_MARKUP END-->   
+
+    <script>
+        angular.module('App01',[]);
+    </script>
+  </body>
+</html>

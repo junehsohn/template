@@ -1,3 +1,9 @@
-<div class="list_container" >
-	<listBox list="ListManager.listArr"></listBox>
+<div class="page_container list" >
+	<h3>{{ListController.title}}</h3>
+	<ul class="list">
+		<li ng-repeat="li in ListController.listArr">
+			<span class="list_name">{{li.name}} :: {{li.id}}</span>
+			<button ng-click="ListController.say(li.id)" value="{{li.name}}">{{li.name}}</button>
+		</li>
+	</ul>
 </div>

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 			dest: '.tmp/public/concat/production.app01.js'
 		},
 		jsApp01All: {
-			src: require('../pipeline').prodJsApp01All,
+			src: require('../pipeline').jsApp01AllFilesToInject,
 			dest: '.tmp/public/concat/production.app01.all.js'
 		},
 		css: {
